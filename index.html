@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner with Rewards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Planner with Rewards</h1>
+    </header>
+    <div class="container">
+        <!-- Motivational Quote Section -->
+        <section class="section" id="quote-section">
+            <h2>Motivational Quote</h2>
+            <p id="quote">"The secret of getting ahead is getting started." – Mark Twain</p>
+            <button id="new-quote-btn">New Quote</button>
+        </section>
+
+        <!-- Task Section -->
+        <section class="section" id="task-section">
+            <h2>Tasks</h2>
+            <div id="task-input">
+                <input type="text" id="task-title" placeholder="Enter task">
+                <input type="date" id="task-date">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- Pomodoro Timer Section -->
+        <section class="section" id="pomodoro-section">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">25:00</div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+
+        <!-- Flashcards Section -->
+        <section class="section" id="flashcards-section">
+            <h2>Flashcards</h2>
+            <div id="flashcard-input">
+                <input type="text" id="flashcard-front" placeholder="Front Text">
+                <input type="text" id="flashcard-back" placeholder="Back Text">
+                <button id="add-flashcard-btn">Add Flashcard</button>
+            </div>
+            <ul id="flashcard-list"></ul>
+        </section>
+
+        <!-- Reward System Section -->
+        <section class="section" id="reward-section">
+            <h2>Rewards</h2>
+            <button class="reward-btn" id="movie-reward">Watch a Movie</button>
+            <button class="reward-btn" id="hobby-reward">Do a Hobby</button>
+            <button class="reward-btn" id="walk-reward">Go for a Walk</button>
+            <button class="reward-btn" id="snack-reward">Eat a Snack</button>
+            <button class="reward-btn" id="theme-reward">Unlock New Theme</button>
+            <div id="reward-msg"></div>
+        </section>
+
+        <!-- Invite Friends Section -->
+        <section class="section" id="invite-section">
+            <h2>Invite Friends for Study Group</h2>
+            <div id="invite-input">
+                <input type="text" id="friend-name" placeholder="Enter friend's name">
+                <input type="email" id="friend-email" placeholder="Enter friend's email">
+                <button id="invite-btn">Send Invitation</button>
+            </div>
+            <ul id="invite-list"></ul>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="section" id="notes-section">
+            <h2>Notes</h2>
+            <textarea id="notes" placeholder="Write your notes here..." rows="10" style="width: 100%;"></textarea>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner with Music</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto;
+            transition: background-color 0.5s;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .music-player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .music-player button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .music-player button:hover {
+            background-color: #45a049;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Study Planner with Music</h1>
+    </header>
+    <div class="container">
+        <section class="section" id="music-section">
+            <h2>Background Music</h2>
+            <div class="music-player">
+                <button id="play-pause-btn">Play Music</button>
+                <button id="stop-btn">Stop Music</button>
+            </div>
+            <audio id="audio" src="your-music-file.mp3" preload="auto"></audio>
+        </section>
+
+        <!-- Your other sections like tasks, pomodoro, etc. -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Mode Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Focus Mode Example</h1>
+        <button id="toggle-focus">Enter Focus Mode</button>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Welcome to the Focus Mode Example</h2>
+            <p>This is a simple demonstration of how to implement a focus mode using HTML, CSS, and JavaScript.</p>
+            <p>Click the button above to enter focus mode, which will hide non-essential elements and dim the background to help you concentrate.</p>
+        </section>
+        <aside id="sidebar">
+            <h3>Sidebar</h3>
+            <p>This sidebar contains additional information that can be distracting during focus mode.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer content that will be hidden in focus mode.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
